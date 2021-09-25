@@ -9,9 +9,17 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="container">
+  <header>
+    logo
+  </header>
+  <div class="container form_container">
     <h1>お問い合わせフォーム</h1>
-    <form>
+    <div class="steps">
+      <li class="step">①フォーム入力</li>
+      <li class="step">②入力内容確認</li>
+      <li class="step">③お問い合わせ完了</li>
+    </div>
+    <form action="./confirm.php" method="POST" class="inq_form">
       <div class="mb-3">
         <label for="category" class="form-label">カテゴリ<span class="required">必須</span></label>
         <select class="form-select" aria-label="Default select example">

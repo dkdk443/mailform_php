@@ -1,3 +1,58 @@
-.selector-for-some-widget {
-  box-sizing: content-box;
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+header {
+  height: 80px;
+  background-color: rgb(174, 174, 174);
+}
+h1 {
+  font-size: 28px;
+  margin: 24px 0;
+  font-weight: 600;
+}
+
+.steps {
+  display: flex;
+  margin: 12px 0;
+}
+.step {
+  display: flex;
+  width: 220px;
+  height: 80px;
+  align-items: center;
+  background-color: gray;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  margin-left: 8px;
+  padding: 8px;
+  font-size: 16px;
+}
+.form_container {
+  max-width: 600px;
+  margin: 40px auto;
+}
+.inq_table {
+  border: 2px solid rgb(177, 177, 177);
+  border-collapse: collapse;
+}
+
+.inq_table_row {
+  border: 1px dashed rgb(177, 177, 177);
+  display: flex;
+  margin: -1px;
+}
+
+.inq_title {
+  padding: 10px;
+  min-width: 180px;
+  font-weight: 600;
+}
+.inq_content {
+  padding: 12px;
+  overflow-wrap: anywhere;
+}
+
+.hidden_form {
+  padding: 20px 0;
 }
