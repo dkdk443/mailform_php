@@ -12,3 +12,19 @@
 - メール送信
 - LINE 送信（できれば）
 - Slack 送信（できれば）
+
+# データベース設計
+
+## inquiries テーブル
+
+| カラム名 | 型     | PK  | not null |
+| -------- | ------ | --- | -------- |
+| id       | 数値   | ○   | ○        |
+| category | 文字列 |     | ○        |
+| email    | 文字列 |     | ○        |
+| content  | 文字列 |     | ○        |
+
+```
+CREATE TABLE inquiries (id int NOT NULL PRIMARY KEY, category varchar(20) NOT NULL, email varchar(50) NOT NULL,
+content varchar(200) NOT NULL);
+```
