@@ -22,7 +22,7 @@
     <form action="./confirm.php" method="POST" class="inq_form">
       <div class="mb-3">
         <label for="category" class="form-label">カテゴリ<span class="required">必須</span></label>
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" aria-label="Default select example" name="category">
           <option value="サービスについて" selected>サービスについて</option>
           <option value="取材について">取材について</option>
           <option value="採用について">採用について</option>
@@ -30,13 +30,13 @@
         </select>
       </div>
        <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">メールアドレス<span class="required">必須</span></label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <label for="email" class="form-label">メールアドレス<span class="required">必須</span></label>
+        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">お問い合わせ内容<span class="required">必須</span></label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <label for="content" class="form-label">お問い合わせ内容<span class="required">必須</span></label>
+        <textarea class="form-control" id="content" rows="3" name="content"></textarea>
       </div>
       <button type="submit" class="btn btn-primary">確認画面へ</button>
     </form>

@@ -1,3 +1,8 @@
+<?php
+  $category = htmlspecialchars($_POST['category']);
+  $email = htmlspecialchars($_POST['email']);
+  $content = htmlspecialchars($_POST['content']);
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -21,11 +26,14 @@
     </div>
     <p>以下の内容で送信しますが、よろしいですか？</p>
     <div class="inq_table">
-      <div class="inq_table_row"><div class="inq_title">カテゴリ</div><div class="inq_content">サービスについて</div></div>
-      <div class="inq_table_row"><div class="inq_title">メールアドレス</div><div class="inq_content">test@mail.com</div></div>
-      <div class="inq_table_row"><div class="inq_title">お問い合わせ内容</div><div  class="inq_content"><p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p></div></div>
+      <div class="inq_table_row"><div class="inq_title">カテゴリ</div><div class="inq_content"><?= $category ?></div></div>
+      <div class="inq_table_row"><div class="inq_title">メールアドレス</div><div class="inq_content"><?= $email ?></div></div>
+      <div class="inq_table_row"><div class="inq_title">お問い合わせ内容</div><div  class="inq_content"><p><?= $content ?></p></div></div>
     </div>
       <form class="hidden_form" method="POST" action="./thankyou.php">
+        <input type="hidden" name="category" value="<?= $category ?>">
+        <input type="hidden" name="email" value="<?= $email ?>">
+        <input type="hidden" name="content" value="<?= $content ?>">
         <button type="submit" class="btn btn-primary">送信する</button>
       </form>
   </div>
