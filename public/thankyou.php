@@ -19,15 +19,8 @@
       <li class="step">②入力内容確認</li>
       <li class="step">③お問い合わせ完了</li>
     </div>
-    <p>以下の内容で送信しますが、よろしいですか？</p>
-    <div class="inq_table">
-      <div class="inq_table_row"><div class="inq_title">カテゴリ</div><div class="inq_content">サービスについて</div></div>
-      <div class="inq_table_row"><div class="inq_title">メールアドレス</div><div class="inq_content">test@mail.com</div></div>
-      <div class="inq_table_row"><div class="inq_title">お問い合わせ内容</div><div  class="inq_content"><p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p></div></div>
-    </div>
-      <form class="hidden_form" method="POST" action="./thankyou.php">
-        <button type="submit" class="btn btn-primary">送信する</button>
-      </form>
+    <p>お問い合わせありがとうございます！</p>
+    <p>１営業日以内に担当者よりご返信いたしますので、少々お待ちください。</p>
   </div>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
